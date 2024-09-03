@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="all">
+    <!-- <button onclick="displayBoard(gameboard)">Afficher plateau de jeux</button>
+  <button onclick="play()">Jouer</button>
+  <button onclick="resetGameboard(gameboard)">reset plateau</button>
+  <button onclick="getScore()">Score</button> -->
+
+    <header>
+      <h1>C'est au tour du joueur : <span id="firstText"></span> de jouer</h1>
+    </header>
+    
+    <div class="mainSection">
+
+
+      <div class="winner" id="winnerScreen">
+
+        <p>Bravo a toi : <span id="nameWinner"></span> pour ta victoire</p>
+        <hr>
+
+
+        <a href="index.html"><button>Relancer une partie</button></a>
+
+
+      </div>
+      <div class="scoreX">
+        <p>Score du joueur X</p>
+        <p id="Xscore"></p>
+      </div>
+      <div class="gameBoard">
+        <div class="cellg cellGroup1">
+          <a onclick="play(0,0);"
+            ><div class="c cell1"><p id="pCell1"></p></div
+          ></a>
+          <a onclick="play(0,1);"
+            ><div class="c cell2"><p id="pCell2"></p></div
+          ></a>
+          <a onclick="play(0,2);"
+            ><div class="c cell3"><p id="pCell3"></p></div
+          ></a>
+        </div>
+
+        <div class="cellg cellGroup2">
+          <a onclick="play(1,0);"
+            ><div class="c cell4"><p id="pCell4"></p></div
+          ></a>
+          <a onclick="play(1,1);"
+            ><div class="c cell5"><p id="pCell5"></p></div
+          ></a>
+          <a onclick="play(1,2);"
+            ><div class="c cell6"><p id="pCell6"></p></div
+          ></a>
+        </div>
+
+        <div class="cellg cellGroup3">
+          <a onclick="play(2,0);"
+            ><div class="c cell7"><p id="pCell7"></p></div
+          ></a>
+          <a onclick="play(2,1);"
+            ><div class="c cell8"><p id="pCell8"></p></div
+          ></a>
+          <a onclick="play(2,2);"
+            ><div class="c cell9"><p id="pCell9"></p></div
+          ></a>
+        </div>
+      </div>
+
+      <div class="scoreO">
+        <p>Score du joueur O</p>
+        <p id="Oscore"></p>
+      </div>
+
+      <hr style="margin-top: 30px; width: 450px; margin-left: 770px" />
+      <div class="restart">
+        <a href="index.html"><button>Restart</button></a>
+      </div>
+    </div>
+
+    <footer>
+      <a href="https://github.com/SnowDiles"
+        ><p>Tous droits déposé @Brahim 2024</p></a
+      >
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
